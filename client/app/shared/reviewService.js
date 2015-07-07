@@ -25,7 +25,6 @@
           method: 'GET',
           url: '/api/reviews',
         }).success(function(reviews){
-          console.log(reviews); //TEMP
           return reviews;
         }).error(function(err){
           console.log(err);

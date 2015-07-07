@@ -26,6 +26,7 @@ angular.module('trApp')
       url: '/auth/profile/check',
     }).success(function(data, status, headers, config){
       $scope.user = data;
+      $scope.user.memberSince = moment(Date($scope.user.memberSince)).format('MMMM Do YYYY');
     });
 
   }
